@@ -157,7 +157,8 @@ local function NewMover()
 	m:SetFrameStrata("FULLSCREEN");
 	m:EnableMouse(true);
 	m:SetMovable(true);
-	m:SetClampedToScreen(true);
+	-- Not held on the screen: some frames stand partly past its edge on purpose (the player
+	-- frame's empty left side), and a held overlay would push them in as soon as it is laid on.
 	m:RegisterForDrag("LeftButton");
 	m:SetBackdrop(BACKDROP);
 	m.label = m:CreateFontString(nil, "OVERLAY", "GameFontNormal");
