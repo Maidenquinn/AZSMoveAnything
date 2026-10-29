@@ -1,0 +1,14 @@
+<Bindings>
+	<Binding name="MOVEANYTHING_TOGGLE" header="MOVEANYTHING">
+		MoveAnything_Toggle();
+	</Binding>
+	<Binding name="MOVEANYTHING_UNDERCURSOR">
+		MoveAnything_MoveFrameUnderCursor();
+	</Binding>
+	<Binding name="MOVEANYTHING_PICK">
+		MoveAnything_Pick();
+	</Binding>
+	<Binding name="MOVEANYTHING_REFRESH">
+		MoveAnything_RefreshPositions();
+	</Binding>
+</Bindings>

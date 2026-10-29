@@ -1,0 +1,18 @@
+## Interface: 11200
+## Title: MoveAnything!
+## Notes: Moves, scales and hides the frames of the interface. Type /move to open the window, or push Edit Mode in the game menu.
+## Version: 0.1.0
+## Author: Kodfod (based on MoveAnything! by Skrag and Jason)
+## SavedVariables: MoveAnythingDB
+Strings.lua
+Custom.lua
+Core.lua
+Frames.lua
+Layout.lua
+Spots.lua
+List.lua
+Profiles.lua
+Movers.lua
+Picker.lua
+Window.lua
+Main.lua
