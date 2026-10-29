@@ -80,18 +80,29 @@ A new class or hero layout starts as a copy of the layout in use.
 
 The command `/moveanything` does the same thing as `/move`.
 
-## Change the words of the window
+## Translate the addon or change its words
 
-You can change the words that the addon writes. You do not change the game files.
+You can translate the addon into your language, or you can change only some of its words. You do not change the game files.
 
-The file `Strings.lua` in the addon folder lists all the words of the addon. The file `Custom.lua` is the file for your changes.
+The file `Strings.lua` in the addon folder lists all the words of the addon in English. The file `Custom.lua` is the file for your translation. Each line in `Custom.lua` replaces the English words of the same line in `Strings.lua`. A line that is not in `Custom.lua` stays in English.
 
-1. Open `Strings.lua`. Find the line with the words that you want to change. Example: `["Reset All"] = "Reset All",`
-2. Copy the line into `Custom.lua`, between the two braces.
-3. Change the words on the right side of the equals sign. Example: `["Reset All"] = "Reset everything",`
-4. Save the file. Start the game again. The addon reads the file when it loads.
+To translate the addon:
 
-Do not change the words on the left side. Keep the codes `%s`, `%d` and `%.2f` in the same order. When you update the addon, keep your `Custom.lua` file.
+1. Open `Strings.lua`. Copy all the lines between the two braces into `Custom.lua`, between its two braces.
+2. On each line, write the translation on the right side of the equals sign. Example: `["Reset All"] = "Alles zurücksetzen",`
+3. Save `Custom.lua` as UTF-8. Start the game again. The addon reads the file when it loads.
+
+To change only some words, copy only those lines into `Custom.lua`. Example: `["Reset All"] = "Reset everything",`
+
+Follow these rules:
+
+- Do not change the words on the left side. The addon uses them to find the line.
+- Keep the codes `%s`, `%d` and `%.2f` in the same order. They show names and numbers. If a code is not correct, the addon uses the English words for that line.
+- Keep the quotation marks at the start and the end of the words. To write a quotation mark in the words, write `\"`.
+- Do not translate the commands, such as `/move` and `/unmove`, in the words. The commands stay the same in all languages.
+- The names of the frames (such as `PlayerFrame`) and the names of the layouts (`Default`, `Class:`, `Hero:`) are not translated.
+- A new version can add lines or change the English words on the left side. A line in `Custom.lua` can then stop working. Compare your lines with `Strings.lua` after you update.
+- When you update the addon, keep your `Custom.lua` file.
 
 ## Limits
 
