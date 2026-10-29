@@ -14,7 +14,7 @@ This addon is based on MoveAnything! by Skrag and Jason for World of Warcraft 1.
 
 ## Use
 
-Push Escape to open the game menu, then push Edit Mode. Or type `/move`.
+Type `/move` to open the window. You can also set a key for the window with `/move key`.
 
 The window lists the frames that you can move. Each frame has 3 controls:
 
@@ -107,6 +107,7 @@ Follow these rules:
 ## Limits
 
 - The game loads addons only in a run. You cannot use the addon from the main menu.
+- The Edit Mode button of the game menu does not open the addon. Type `/move`.
 - The Key Bindings page of the game does not show addon key bindings. Use `/move key` to set a key for the window.
 - The parts of the HUD that the game draws itself can be hidden, but not moved.
 

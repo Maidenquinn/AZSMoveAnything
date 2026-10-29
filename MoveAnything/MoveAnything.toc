@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: MoveAnything!
-## Notes: Moves, scales and hides the frames of the interface. Type /move to open the window, or push Edit Mode in the game menu.
+## Notes: Moves, scales and hides the frames of the interface. Type /move to open the window.
 ## Version: 0.1.0
 ## Author: Kodfod (based on MoveAnything! by Skrag and Jason)
 ## SavedVariables: MoveAnythingDB
