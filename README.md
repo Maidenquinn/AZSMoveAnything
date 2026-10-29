@@ -100,12 +100,6 @@ Follow these rules:
 - A new version can add lines or change the English words on the left side. A line in `Custom.lua` can then stop working. Compare your lines with `Strings.lua` after you update.
 - When you update the addon, keep your `Custom.lua` file.
 
-## Limits
-
-- The game loads addons only in a run. You cannot use the addon from the main menu.
-- The Edit Mode button of the game menu does not open the addon. Type `/move`.
-- The Key Bindings page of the game does not show addon key bindings. Use `/move key` to set a key for the window.
-
 ## Saved data
 
 The addon keeps its layouts in this file: `benilla-config/saved/MoveAnything.lua`. Push Reset All two times to put all the frames of the layout in use back where the game puts them.
