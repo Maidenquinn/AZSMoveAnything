@@ -47,10 +47,6 @@ Use the vertical entry to put the buttons in a column. Reset puts the buttons ba
 
 The frame then shows in the list under "Your frames".
 
-### The game HUD
-
-The game draws some parts of the screen itself: the run clock, the boss bars, the kills and gold, the spell and jewelry rows, the messages in the middle of the screen, the boss loot notice, the damage meter, the Level Up! button and the minimap lair flag. You can hide these parts, but you cannot move them. This is the same setting as Options > Interface.
-
 ## Layouts
 
 "Layout for" at the bottom of the window sets which heroes use the layout:
@@ -109,7 +105,6 @@ Follow these rules:
 - The game loads addons only in a run. You cannot use the addon from the main menu.
 - The Edit Mode button of the game menu does not open the addon. Type `/move`.
 - The Key Bindings page of the game does not show addon key bindings. Use `/move key` to set a key for the window.
-- The parts of the HUD that the game draws itself can be hidden, but not moved.
 
 ## Saved data
 
